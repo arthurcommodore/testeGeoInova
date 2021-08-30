@@ -1,0 +1,24 @@
+{
+  "name": "testeGeoInova",
+  "version": "1.0.0",
+  "description": "Teste para a vaga de front-end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurcommodore/testeGeoInova.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arthurcommodore/testeGeoInova/issues"
+  },
+  "homepage": "https://github.com/arthurcommodore/testeGeoInova#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.0",
+    "express": "^4.17.1"
+  }
+}

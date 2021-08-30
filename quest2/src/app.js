@@ -13,7 +13,6 @@ const date = {
     method: "post"
 }
 
-
 document.querySelector('button').addEventListener('click', validacao)
 
 const generatePromises = promises => {
@@ -24,12 +23,20 @@ const generatePromises = promises => {
 }
 
 function validacao() {
-    const inputs = document.querySelector('input')
+    const inputs = document.querySelectorAll('input')
+    let inputsComplete 
+
+    inputs.forEach(input => {
+        inputsComplete = input.value.trim()
+    })
     
     const promises = []
-
-    Promise.all(generatePromises(promises))
-        .then(json => insertMsg(json))
+    inputsComplete ?
+        Promise.all(generatePromises(promises))
+            .then(json => insertMsg(json))
+    : (() => {
+        inputs.forEach(input => input.style.border = '1px solid red')
+    })()
 
     
 }
