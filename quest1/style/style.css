@@ -6,13 +6,14 @@ html, body {
     margin: 0px;
 }
 
-body {
-}
-
 header {
-    background-color: gray;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(63, 62, 62);
     width: 100%;
     height: 5rem;
+    align-items: center;
+    box-shadow: 0 0 0.5em ;
 }
 
 li {
@@ -29,6 +30,12 @@ select {
 span {
     font-size: 1rem;
     font-weight: 500;
+}
+
+#logo {
+    height: 3rem;
+    width: 15rem;
+    margin-right: 40px;
 }
 
 #questions {
