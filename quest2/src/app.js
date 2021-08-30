@@ -32,13 +32,14 @@ function validacao() {
     
     const promises = []
     inputsComplete ?
-        Promise.all(generatePromises(promises))
-            .then(json => insertMsg(json))
+        (() => {
+            saveLocal()
+            Promise.all(generatePromises(promises))
+                .then(json => insertMsg(json))
+        })()
     : (() => {
         inputs.forEach(input => input.style.border = '1px solid red')
     })()
-
-    
 }
 
 function getMsg(param) {
@@ -50,10 +51,19 @@ function getMsg(param) {
 
 function insertMsg(array) {
     const msg = document.querySelector('#msg')
-    const p = document.createElement('p')
-
+    const msgText = []
     array.forEach(elem => {
-        p.insertAdjacentText('beforeend', elem.message)
+        msgText.push(elem.message)
     })
-    msg.insertAdjacentElement('beforeend', p)
+    msg.innerHTML = msgText.toString()
+}
+
+function saveLocal() {
+    inputName = document.querySelector('input[name="name"]')
+    inputEmail = document.querySelector('input[name="email"]')
+    inputNascimento = document.querySelector('input[name="nascimento"')
+
+    localStorage.setItem('name', inputName.value)
+    localStorage.setItem('email', inputEmail.value)
+    localStorage.setItem('nascimento', inputNascimento.value)
 }
