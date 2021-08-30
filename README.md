@@ -2,8 +2,8 @@
 Teste para a vaga de front-end
 
 Eu utilizo o live-server para testar minhas aplicações,
-para testar qualquer aplicação é só dar aquele comando: npm installl,
-e depois live-server.
+para testar qualquer aplicação é só dar aquele comando no terminal ou cmd: npm installl,
+e depois dar o seguinte comando no terminal ou cmd: live-server, na pasta: testeGeoInova.
 
 Quando utilizar o comando live-server, ira abrir a seguinte aba em seu navegador:
 
