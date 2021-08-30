@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../src/app.js" async></script>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="painel" class="gradient-border">
+        <form id="form">
+            <div class="form-group">
+            <input type="text" class="form-control"  placeholder="Enter name" name="name" required>
+            <small class="form-text text-muted">(*)</small>
+            </div>
+
+            <div class="form-group">
+            <input type="text" class="form-control"  placeholder="nascimento" name="nascimento" required>
+            <small class="form-text text-muted">(*)</small>
+            </div>
+
+            <div class="form-group">
+            <input type="text" class="form-control"  placeholder="email" name="email" required>
+            <small class="form-text text-muted">(*)</small>
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="sexo" value 'sexo' >
+                <label class="form-check-label" for="exampleCheck1">(*)</label>
+            </div>
+            <button type="button" class="btn btn-primary">Submit</button>
+        </form>
+        <div id="msg"></div>
+    </div>
+</body>
+</html>
