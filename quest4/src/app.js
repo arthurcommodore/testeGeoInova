@@ -5,7 +5,7 @@ const inputEmail = document.querySelector('input[name="email"]')
 const buttonSubmit = document.querySelector('#submit')
 const buttonSearch = document.querySelector('#search')
 
-if(JSON.parse(localStorage.getItem('firstTime') ) === true)
+if(!JSON.parse(localStorage.getItem('firstTime') ))
    localInit() 
 
 loadLocal()
@@ -20,7 +20,6 @@ const saveCliente = () => {
         : 0 
     }
 
-    console.log(verify())
     verify() === 0 ?
         (() => {
             names.push(inputName.value)
@@ -43,6 +42,7 @@ const getCliente = () => {
     document.querySelector('#clientes')
         .insertAdjacentElement('beforeend', option)
 }
+
 const searchCliente = () => {
     const [names, emails, nascimentos] = getPropries()
     const divInfo = document.querySelector("#info")
