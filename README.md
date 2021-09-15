@@ -1,4 +1,4 @@
-# testeGeoInova
+# Prova GeoInova
 Teste para a vaga de front-end da empresa GeoInova
 
 Eu utilizo o live-server para testar minhas aplicações,
