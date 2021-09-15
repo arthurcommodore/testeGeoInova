@@ -1,5 +1,5 @@
 # testeGeoInova
-Teste para a vaga de front-end
+Teste para a vaga de front-end da empresa GeoInova
 
 Eu utilizo o live-server para testar minhas aplicações,
 para testar qualquer aplicação é só dar aquele comando no terminal ou cmd: npm installl,
